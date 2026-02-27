@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #82d6a2, #fff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  width: 350px;
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+
+input {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background: teal;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background: darkcyan;
+}
+
+
+.mobile-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+
+/* Custom Dropdown */
+.custom-dropdown {
+  position: relative;
+  width: 140px;
+}
+
+
+.selected {
+  padding: 6px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 120px;
+  overflow-y: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  z-index: 1000;
+}
+
+
+.dropdown-list div {
+  padding: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.dropdown-list div:hover {
+  background: #e0f7fa;
+}
+
+
+#result {
+  margin-top: 15px;
+  text-align: left;
+  font-size: 13px;
+}

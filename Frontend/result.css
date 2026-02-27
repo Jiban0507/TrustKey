@@ -1,0 +1,74 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.result-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #ffeb3b;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #ffcc80;
+}
+
+.card p {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.25);
+}
+
+.status-card {
+  border: 2px solid #ffeb3b;
+}
+
+button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #ff5722;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #e64a19;
+  transform: scale(1.05);
+}

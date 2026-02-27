@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verification Result</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+  <div class="result-container">
+    <h1>🔐 Verification Result</h1>
+
+    <div class="card">
+      <h2>Age Proof</h2>
+      <p id="dobProof"></p>
+    </div>
+
+    <div class="card">
+      <h2>Future Age Proof</h2>
+      <p id="futureAgeProof"></p>
+    </div>
+
+    <div class="card">
+      <h2>Mobile Proof</h2>
+      <p id="mobileProof"></p>
+    </div>
+
+    <div class="card">
+      <h2>Aadhaar Proof</h2>
+      <p id="aadhaarProof"></p>
+    </div>
+
+    <div class="card status-card">
+      <h2>Status</h2>
+      <p id="statusProof"></p>
+    </div>
+
+    <button onclick="window.location.href='index.html'">🔙 Back to Form</button>
+  </div>
+
+  <script>
+    const result = localStorage.getItem("verifyResult");
+    if(result){
+      const parsed = JSON.parse(result);
+      document.getElementById("dobProof").textContent = parsed.dob_proof;
+      document.getElementById("futureAgeProof").textContent = parsed.future_age_proof || "Not provided";
+      document.getElementById("mobileProof").textContent = parsed.mobile_proof;
+      document.getElementById("aadhaarProof").textContent = parsed.aadhaar_proof;
+      document.getElementById("statusProof").textContent = parsed.status;
+    } else {
+      document.getElementById("dobProof").textContent = "No result found.";
+      document.getElementById("futureAgeProof").textContent = "No result found.";
+      document.getElementById("mobileProof").textContent = "No result found.";
+      document.getElementById("aadhaarProof").textContent = "No result found.";
+      document.getElementById("statusProof").textContent = "No result found.";
+    }
+  </script>
+</body>
+</html>

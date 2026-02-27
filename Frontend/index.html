@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TrustKey Verification Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TrustKey Verification Form</h1>
+    
+    <form id="verifyForm">
+      <label>Date of Birth:</label>
+      <input type="date" id="dob" required>
+
+      <label>Future Year (optional):</label>
+      <input type="number" id="futureYear" placeholder="Enter future year">
+
+      <label>Mobile Number:</label>
+      <div class="mobile-block">
+        <!-- Custom Dropdown -->
+        <div class="custom-dropdown">
+          <div id="selectedCode" class="selected">+91 (India)</div>
+          <div id="dropdownList" class="dropdown-list"></div>
+        </div>
+
+        <!-- Hidden input for backend -->
+        <input type="hidden" id="countryCode">
+
+        <input type="text" id="mobileNumber" placeholder="Enter mobile number" required>
+      </div>
+
+      <label>Aadhaar Number:</label>
+      <input type="text" id="aadhaar" required>
+
+      <button type="submit">Verify</button>
+      <button type="button" id="clearBtn">Clear</button>
+    </form>
+  </div>
+
+  <script src="countries.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
