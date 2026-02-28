@@ -10,7 +10,7 @@ document.getElementById("verifyForm").addEventListener("submit", async function(
   const fullMobile = countryCode + mobileNumber;
 
   try {
-    const response = await fetch("http://127.0.0.1:5000/verify", {
+    const response = await fetch("https://trustkey1-0.onrender.com/verify", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -23,10 +23,7 @@ document.getElementById("verifyForm").addEventListener("submit", async function(
 
     const result = await response.json();
 
-    // ✅ Save result in localStorage
     localStorage.setItem("verifyResult", JSON.stringify(result));
-
-    // ✅ Redirect to result.html
     window.location.href = "result.html";
 
   } catch (error) {
