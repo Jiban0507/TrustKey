@@ -121,24 +121,33 @@ Frontend runs on: **`http://127.0.0.1:5500/index.html`**
 - Card‑style result page with unique hover animation.  
 - Clear separation of proofs for demo clarity.  
 - Responsive design for desktop & mobile.  
-- Global country code support via `countries.js`.  
-
----
-
-## 👨‍💻 Author
-
-- **Jiban Maji**  
-- GitHub: [github.com/Jiban0507](https://github.com/Jiban0507)  
-- Built for **National Hackathon Demo** with focus on clarity, accessibility, and professional polish.  
+- Global country code support via `countries.js`.    
 
 ---
 
 ## 🏆 Hackathon Judge Notes
 
-- **Data Privacy** → Judges will see proof results only, not sensitive data.  
-- **Demo Flow** → Easy to run: Backend (`python app.py`) + Frontend (`http.server`).  
-- **Professional Docs** → Clear structure, flow diagram, and authorship highlighted.  
-- **Expandability** → Can add more proofs (Passport, Voter ID) with same ZKP logic.  
+
+**Data Privacy Assurance**  
+- Judges will only see **proof outcomes** (Verified/Failed).  
+- Sensitive inputs (Aadhaar, DOB, Mobile number) are **never revealed** in raw form.  
+- Encrypted values remain hidden; only the **result of verification** is displayed.  
+- This ensures Zero‑Knowledge Proof (ZKP) style privacy — proof without exposing actual data.  
+
+**Demo Flow**  
+- Easy to run:  
+  - Backend → `python app.py`  
+  - Frontend → `http.server`  
+- Judges can test the flow quickly without extra setup.  
+
+**Professional Documentation**  
+- Clear project structure with flow diagram.  
+- Authorship highlighted for transparency.  
+- Judge‑friendly notes included for quick understanding.  
+
+**Expandability**  
+- More proofs (Passport, Voter ID, etc.) can be added using the same ZKP logic.  
+- Scalable design ensures future growth without compromising privacy.  
 
 ---
 
@@ -154,6 +163,11 @@ Only Proof Results Sent
 Frontend (Card Style Result Page)
 ```
 
+## 👨‍💻 Author
+
+- **Jiban Maji**  
+- GitHub: [github.com/Jiban0507](https://github.com/Jiban0507)  
+- Built for **National Hackathon Demo** with focus on clarity, accessibility, and professional polish.
 ---
 
 ## ✅ License
